@@ -1,0 +1,280 @@
+/* Font & Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #0f0f0f, #1c1c1c);
+  color: #f1f1f1;
+  scroll-behavior: smooth;
+}
+/* Home Wrapper Layout */
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px 40px;
+  text-align: center;
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+}
+
+.hero-card {
+  max-width: 800px;
+  padding: 60px 40px;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 3rem;
+  color: #00e0ff;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #d0d0d0;
+  margin-bottom: 30px;
+}
+.hero-cta {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.hero-cta {
+  display: inline-block;
+  padding: 14px 36px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #00d2ff, #3a47d5);
+  color: white;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.hero-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 210, 255, 0.4);
+}
+
+.centered-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-image {
+  margin-top: 30px;
+  margin-left: 190px;
+  width: 100%;
+  max-width: 400px;
+  animation: float 4s ease-in-out infinite;
+  display: block;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Features Section */
+.features-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  gap: 20px;
+  background: #121212;
+}
+
+.feature {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  padding: 30px;
+  text-align: center;
+}
+
+.feature h3 {
+  color: #00e0ff;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* Sticky Footer */
+.footer {
+  background-color: #1a1a1a;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+
+/* Glassmorphic Card Base */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Header/Nav */
+header {
+  background: linear-gradient(to right, #1f1f1f, #292929);
+  padding: 20px 0;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #00d4ff;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Report Submission Page */
+.report-submission-container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.report-submission-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #00e0ff;
+}
+
+.report-submission-container input,
+.report-submission-container button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(255,255,255,0.08);
+  color: #f1f1f1;
+  outline: none;
+}
+
+.report-submission-container input::placeholder {
+  color: #aaa;
+}
+
+.report-submission-container button {
+  background: linear-gradient(135deg, #00d2ff, #3a47d5);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.4s ease;
+}
+
+.report-submission-container button:hover {
+  background: linear-gradient(135deg, #3a47d5, #00d2ff);
+}
+
+/* Status & Feedback */
+.status-box {
+  margin-top: 30px;
+  padding: 20px;
+  border-left: 5px solid #00d4ff;
+  border-radius: 12px;
+  background-color: rgba(255,255,255,0.04);
+}
+
+.feedback-box {
+  margin-top: 20px;
+  padding: 16px;
+  background-color: rgba(40, 180, 99, 0.1);
+  border-left: 4px solid #28a745;
+  border-radius: 10px;
+  color: #b3f8c7;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+/* Hero Section (Dark theme) */
+.dark-hero {
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+}
+
+/* Features Section (Dark themed, no light bg) */
+.dark-features {
+  background: #0f0f0f;
+}
+
+/* Optional: Slight tweak for feature texts */
+.feature p {
+  color: #aaa;
+}
+.logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(0, 224, 255, 0.6));
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
