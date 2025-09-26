@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# SmartSubmit
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+SmartSubmit is an AI-powered report submission and collaboration platform built using React, Python, FastAPI, and MySQL. It allows users to upload reports in multiple formats, detect plagiarism, provide grammar/style feedback, and collaborate in real time.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🛠️ Features
 
-### `npm start`
+- Multi-format file upload (PDF, Word, etc.)  
+- Plagiarism detection  
+- Grammar and style checking  
+- AI-driven feedback and suggestions  
+- Real-time commenting and collaboration  
+- User authentication and role-based access  
+- Dashboard to manage submissions  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧩 Tech Stack
 
-### `npm test`
+| Layer        | Technology        |
+|---------------|-------------------|
+| Frontend      | React.js, CSS     |
+| Backend       | Python, FastAPI   |
+| Database      | MySQL             |
+| Auth & APIs   | REST               |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🚀 Setup & Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repo  
+   ```bash
+   git clone https://github.com/Bhargavi784/SmartSubmit.git
+   cd SmartSubmit
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2.Install frontend dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+cd src
+npm install
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3.Install backend dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+cd ../public
+pip install -r requirements.txt
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4.Configure database (MySQL)
 
-## Learn More
+Create a database
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Set credentials in config file / .env
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5.Run backend server
 
-### Code Splitting
+uvicorn main:app --reload
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+6.Run frontend
 
-### Analyzing the Bundle Size
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+7.Open browser and go to http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+📂 Project Structure
+SmartSubmit/
+├── public/          # Backend (API + logic)
+├── src/             # Frontend (React app)
+├── .gitignore
+├── README.md
+└── package.json
 
-### Advanced Configuration
+✅ Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Sign up or log in as a student or instructor
 
-### Deployment
+Students can submit assignments, see feedback
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Instructors can view submissions, leave comments, detect plagiarism
 
-### `npm run build` fails to minify
+Collaborators can comment in real time
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+✨ Future Enhancements
+
+Add real-time notifications
+
+More AI-based feedback for content
+
+Mobile-friendly responsive UI
+
+Analytics dashboard for instructors
+
+👥 Contributors
+
+Bhargavi Deshmukh
+Vaishali Jagtap
+Yash Gomte
+Shrutika Ghuge
+
