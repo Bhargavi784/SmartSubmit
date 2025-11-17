@@ -1,6 +1,6 @@
 # SmartSubmit
 
-SmartSubmit is an AI-powered report submission and collaboration platform built using React, Python, FastAPI, and MySQL. It allows users to upload reports in multiple formats, detect plagiarism, provide grammar/style feedback, and collaborate in real time.
+SmartSubmit is an AI-powered report submission and collaboration platform built using React, Python, FastAPI, and PoastgreSQL. It allows users to upload reports in multiple formats, detect plagiarism, provide grammar/style feedback, and collaborate in real time.
 
 ---
 
@@ -22,7 +22,7 @@ SmartSubmit is an AI-powered report submission and collaboration platform built 
 |---------------|-------------------|
 | Frontend      | React.js, CSS     |
 | Backend       | Python, FastAPI   |
-| Database      | MySQL             |
+| Database      | PostgreSQL             |
 | Auth & APIs   | REST               |
 
 ---
@@ -46,7 +46,7 @@ cd ../public
 pip install -r requirements.txt
 
 
-4.Configure database (MySQL)
+4.Configure database (PostgreSQL)
 
 Create a database
 
